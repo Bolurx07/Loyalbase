@@ -1,13 +1,33 @@
-body {
+@font-face {
+  font-family: "Satoshi-Light";
+  src: local("Satoshi"),
+   url("./Fonts/Satoshi-Light.otf") format("opentype");
+  font-weight: light;
+  }
+
+
+@font-face {
+    font-family: "Satoshi-Regular";
+    src: local("Satoshi"),
+    url("./Fonts/Satoshi-Regular.otf") format("opentype");
+    font-weight: normal;
+    }
+
+@font-face {
+    font-family: "Satoshi-Bold";
+    src: local("Satoshi"),
+    url("./Fonts/Satoshi-Bold.otf") format("opentype");
+    font-weight: bold;
+    }
+
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  font-family: 'Satoshi-Light', sans-serif;
 }
