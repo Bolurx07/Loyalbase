@@ -1,0 +1,49 @@
+.maincontainer{
+    background-color: #121B27;
+    font-family: 'Satoshi-Regular';
+    padding: 3rem;
+    color: #ffffff;
+
+    
+}
+
+.sect1 header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerbtn{
+    padding: 1rem 1.5rem;
+    color: white;
+    border: 1px solid #5404FF;
+    border-radius: 100px;
+    background-color: #121b2700;
+}
+
+.headerlogo{
+    width: 10rem;
+}
+
+.herodiv h1{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    text-align: center;
+    padding: 0 20%;
+}
+
+.herodiv span{
+    color: #A75FD2;
+}
+
+.herodiv p{
+    font-family: 'Satoshi-Light';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 130%;
+    text-align: center;
+    padding: 0 18%;
+
+}
