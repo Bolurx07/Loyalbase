@@ -2,31 +2,41 @@
     background-color: #121B27;
     font-family: 'Satoshi-Regular';
     padding: 3rem;
-    color: #ffffff;
-
-    
+    color: #ffffff;   
 }
 
 .sect1 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 6rem;
+}
+
+.headerbtn-div{
+    background: linear-gradient(to left,#5404FF 0%, rgba(189, 59, 210, 0.94) 81.9%);
+    padding: 2px;
+    border-radius: 100px;
 }
 
 .headerbtn{
     padding: 1rem 1.5rem;
     color: white;
-    border: 1px solid #5404FF;
+    border: none ;
+    background-color: #121b27;
     border-radius: 100px;
-    background-color: #121b2700;
+    cursor: pointer;
 }
 
 .headerlogo{
     width: 10rem;
 }
 
+.herodiv{
+    margin: 2rem 0;
+}
 .herodiv h1{
-    font-style: normal;
+    font-family: 'Satoshi-Bold';
+    font-style: bolder;
     font-weight: 900;
     font-size: 60px;
     text-align: center;
@@ -45,5 +55,54 @@
     line-height: 130%;
     text-align: center;
     padding: 0 18%;
+}
 
+.heroform{
+    text-align: center;
+}
+.heroinput{
+    padding: 1rem 1rem 1rem 2.5rem;
+    background-color: #121b2700;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0.5rem 0;
+    width: 25rem;
+}
+
+.heroinput::placeholder{
+    color: #ffffff;
+}
+#heroname{
+    background-image: url('../Assets/profile.svg');
+}
+
+#heromail{
+    background-image: url('../Assets/mail.svg');
+}
+
+#heroname, #heromail{
+    background-repeat: no-repeat;
+    background-position: 8px;
+}
+
+.heroform button{
+    background: linear-gradient(112.92deg, #5404FF 18.35%, rgba(189, 59, 210, 0.94) 71.49%);;
+    padding: 0.75rem 9rem;
+    border-radius: 100px;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+.herouser{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.herouser img{
+    margin-right: 4px;
 }

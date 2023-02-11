@@ -1,7 +1,9 @@
 import './Style.css';
-import logo from '../Assets/logo.svg';
 import Button from '../Components/Button';
 import Input from '../Components/Input';
+import logo from '../Assets/logo.svg';
+import heroimg from '../Assets/heroimg.svg';
+
 
 const Loyalbaze = () => {
   return (
@@ -9,7 +11,9 @@ const Loyalbaze = () => {
         <section className='sect1'>
             <header>
                 <img src={logo} alt="logo" className='headerlogo' />
-                <Button btnText={"Get Priority Access"} btnClass={"headerbtn"}/>
+                <div className='headerbtn-div'>
+                    <Button btnText={"Get Priority Access"} btnClass={"headerbtn"}/>
+                </div>
             </header>
             <div className='herodiv'>
                 <h1>Turn your best customers into <span>Loyal fans</span></h1>
@@ -20,11 +24,15 @@ const Loyalbaze = () => {
                     your business. Sign up now to get early access.
                 </p>
             </div>
-            <form action="">
-                <Input inputclass={'heroinput'} inputType={'name'} inputPlaceholder={'Tell us your name'}  />
-                <Input inputclass={'heroinput'} inputType={'email'} inputPlaceholder={'Enter your email address'}  />
+            <form className='heroform' > 
+                <Input inputclass={'heroinput'} inputType={'name'} inputPlaceholder={'Tell us your name'} inputID={'heroname'} />
+                <Input inputclass={'heroinput'} inputType={'email'}  inputPlaceholder={'Enter your email address'} inputID={'heromail'} />
                 <Button btnText={'Get early access'} btnClass={'herobtn'}/>
             </form>
+            <div className='herouser'>
+                <img src={heroimg} alt="user" />
+                <p>+57 Joined</p>
+            </div>
         </section>
     </div>
   )
