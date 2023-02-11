@@ -3,6 +3,7 @@
     font-family: 'Satoshi-Regular';
     padding: 3rem;
     color: #ffffff;   
+    position: relative;
 }
 
 .sect1 header{
@@ -36,7 +37,6 @@
 }
 .herodiv h1{
     font-family: 'Satoshi-Bold';
-    font-style: bolder;
     font-weight: 900;
     font-size: 60px;
     text-align: center;
@@ -105,4 +105,53 @@
 
 .herouser img{
     margin-right: 4px;
+}
+
+.ellipse1, .ellipse2, .ellipse3, .star1, .star2, .star3, .star4, .heroscribe{
+    position: absolute;
+    z-index: 0;
+}  
+
+.ellipse1{
+    top: 11rem;
+    max-height: 10rem;
+
+}
+
+.ellipse2{
+    top: 6rem;
+    right: 20%;
+    max-height: 7rem;
+}
+
+.ellipse3{
+    top: 20rem;
+    right: 0;
+    max-height: 20rem;
+}
+
+.star1{
+    top: 11rem;
+    left: 33%;
+}
+
+.star2{
+    top: 17.5rem;
+    right: 18%;
+}
+
+.star3{
+    bottom: 6rem;
+    right: 7%;
+}
+
+.star4{
+    bottom: 2rem;
+    left: 7%;
+}
+
+.heroscribe{
+    bottom: 20%;
+    right: 20%;
+
 }

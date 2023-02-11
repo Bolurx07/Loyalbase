@@ -3,11 +3,28 @@ import Button from '../Components/Button';
 import Input from '../Components/Input';
 import logo from '../Assets/logo.svg';
 import heroimg from '../Assets/heroimg.svg';
+import ellipse1 from '../Assets/Ellipse-1.svg';
+import ellipse2 from '../Assets/Ellipse-2.svg';
+import ellipse3 from '../Assets/Ellipse-3.svg';
+import star1 from '../Assets/Star3.svg';
+import star2 from '../Assets/Star4.svg';
+import heroscribe from '../Assets/heroscribe.svg';
+
 
 
 const Loyalbaze = () => {
   return (
     <div className='maincontainer'>
+        <img src={ellipse1} alt="ellipse" className='ellipse1' />
+        <img src={ellipse2} alt="ellipse" className='ellipse2' />
+        <img src={ellipse3} alt="ellipse" className='ellipse3' />
+        <img src={star1} alt="star" className='star1' />
+        <img src={star1} alt="star" className='star2' />
+        <img src={star2} alt="star" className='star3' />
+        <img src={star2} alt="star" className='star4' />
+        <img src={heroscribe} alt="scribe" className='heroscribe' />
+
+
         <section className='sect1'>
             <header>
                 <img src={logo} alt="logo" className='headerlogo' />
@@ -33,6 +50,28 @@ const Loyalbaze = () => {
                 <img src={heroimg} alt="user" />
                 <p>+57 Joined</p>
             </div>
+        </section>
+        <section>
+            <div>
+                <h2>Priority Access</h2>
+                <img src="" alt="" />
+                <p>
+                    Get ready to revolutionize the way you interact with your customers 
+                    and drive sales with Loyalbaze. Skip the waitlist and get exclusive 
+                    priority access to LoyalBaze. Limited slots available. Please tell 
+                    us a bit about your business and needs and of our consultants will 
+                    be in touch Immediately!
+                </p>
+            </div>
+            <form>
+                <h3>Book a Consultation with us</h3>
+                <Input inputclass={'nameinput'} inputType={'name'} inputPlaceholder={'Enter your full name'} />
+                <Input inputclass={'mailinput'} inputType={'email'} inputPlaceholder={'Enter your work email'} />
+                <Input inputclass={'numinput'} inputType={'number'} inputPlaceholder={'Mobile number'} />
+                <Input inputclass={'companyinput'} inputType={'name'} inputPlaceholder={'Company Name'} />
+                <textarea resize='none'  name="message" placeholder="message" rows="20" cols="30" minLength={10}></textarea>
+
+            </form>
         </section>
     </div>
   )
