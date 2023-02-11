@@ -9,6 +9,10 @@ import ellipse3 from '../Assets/Ellipse-3.svg';
 import star1 from '../Assets/Star3.svg';
 import star2 from '../Assets/Star4.svg';
 import heroscribe from '../Assets/heroscribe.svg';
+import scribe from '../Assets/scribe2.svg';
+import home from '../Assets/home.svg';
+import phone from '../Assets/phone.svg';
+
 
 
 
@@ -51,10 +55,10 @@ const Loyalbaze = () => {
                 <p>+57 Joined</p>
             </div>
         </section>
-        <section>
-            <div>
+        <section className='sect2'>
+            <div className='contentdiv'>
                 <h2>Priority Access</h2>
-                <img src="" alt="" />
+                <img src={scribe} alt="scribe" />
                 <p>
                     Get ready to revolutionize the way you interact with your customers 
                     and drive sales with Loyalbaze. Skip the waitlist and get exclusive 
@@ -63,16 +67,41 @@ const Loyalbaze = () => {
                     be in touch Immediately!
                 </p>
             </div>
-            <form>
+            <form className='sect2form'>
                 <h3>Book a Consultation with us</h3>
                 <Input inputclass={'nameinput'} inputType={'name'} inputPlaceholder={'Enter your full name'} />
                 <Input inputclass={'mailinput'} inputType={'email'} inputPlaceholder={'Enter your work email'} />
                 <Input inputclass={'numinput'} inputType={'number'} inputPlaceholder={'Mobile number'} />
                 <Input inputclass={'companyinput'} inputType={'name'} inputPlaceholder={'Company Name'} />
-                <textarea resize='none'  name="message" placeholder="message" rows="20" cols="30" minLength={10}></textarea>
-
+                <select name="country"  id='sect2select'> 
+                        <option defaultValue="" selected>Select Country</option>
+                        <option value="nigeria">Nigeria</option>
+                        <option value="southafrica">South Africa</option>
+                        <option value="kenya">Kenya</option>
+                        <option value="russia">Russia</option>
+                        <option value="sweden">Sweden</option>
+                        <option value="portugal">Portugal</option>
+                        <option value="usa">USA</option>
+                        <option value="china">China</option>
+                    </select>
+                <textarea resize='none'  name="message" placeholder="Drop a message....." rows="5" cols="20" minLength={10} id="sect2message"></textarea>
+                <Button btnText={'Send Request'} btnClass={'sect2button'} />
             </form>
         </section>
+        <hr />
+        <footer className='myfooter'>
+            <div>
+                <img src={home} alt="homeicon" />
+                <p>2nd Floor, The Garnet Building, KM14 Lekki Epe Expressway, Lagos, Nigeria.</p>
+            </div>
+            <div>
+                <p>Loyalbaze is almost here.</p>
+            </div>
+            <div>
+                <img src={phone} alt="phoneicon" />
+                <p>+234 903 618 9485</p>
+            </div>
+        </footer>
     </div>
   )
 }

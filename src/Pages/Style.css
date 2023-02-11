@@ -3,9 +3,12 @@
     font-family: 'Satoshi-Regular';
     padding: 3rem;
     color: #ffffff;   
-    position: relative;
 }
 
+.sect1{
+    position: relative;
+
+}
 .sect1 header{
     display: flex;
     justify-content: space-between;
@@ -154,4 +157,79 @@
     bottom: 20%;
     right: 20%;
 
+}
+
+.sect2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 1.5rem;
+}
+
+.contentdiv{
+   padding: 2rem;
+   text-align: center; 
+}
+
+.contentdiv h2{
+    font-weight: 700;
+    font-size: 60px;
+    margin-bottom: 1rem;
+}
+
+.contentdiv p{
+    font-style: 'Satoshi-Regular';
+    font-weight: 200;
+    font-size: 20px;
+    padding: 0.5rem 7rem;
+    text-align: start;
+}
+.sect2form{
+    padding: 2.5rem 1.5rem;
+    background: #1D2939;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.sect2form h3{
+    text-align: left;
+    margin: 0 0 1rem 1rem;
+}
+
+.sect2form input, #sect2select, #sect2message{
+    padding: 0.85rem 1rem;
+    margin: 0.5rem 0;
+    width: 22rem;
+    background-color: #121b2700;
+    border: 1px solid rgba(221, 221, 221, 0.5);
+    border-radius: 8px;
+}
+
+.sect2form input::placeholder, #sect2select::placeholder, #sect2message::placeholder{
+    color: #ffffffc0;
+}
+
+#sect2select{
+    color: #ffffffc0;
+}
+
+#sect2select option{
+    color: black;
+}
+
+.sect2button{
+    background: linear-gradient(112.92deg, #5404FF 18.35%, rgba(189, 59, 210, 0.94) 71.49%);
+    border-radius: 100px;
+    padding: 0.75rem 0;
+    width: 22rem;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.myfooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
 }
