@@ -7,8 +7,10 @@
 
 .sect1{
     position: relative;
+    padding-bottom: 6rem;
 
 }
+
 .sect1 header{
     display: flex;
     justify-content: space-between;
@@ -29,6 +31,10 @@
     background-color: #121b27;
     border-radius: 100px;
     cursor: pointer;
+}
+
+.headerbtn:hover{
+    background-color: #ffffff5b;
 }
 
 .headerlogo{
@@ -72,7 +78,7 @@
     width: 25rem;
 }
 
-.heroinput::placeholder{
+.heroinput::placeholder, .heroinput:focus{
     color: #ffffff;
 }
 #heroname{
@@ -97,6 +103,11 @@
     font-size: 1rem;
     margin: 1rem 0;
     cursor: pointer;
+    transition: 0.5s;
+}
+
+.heroform button:hover{
+    transform: scaleX(0.95);
 }
 
 .herouser{
@@ -112,7 +123,7 @@
 
 .ellipse1, .ellipse2, .ellipse3, .star1, .star2, .star3, .star4, .heroscribe{
     position: absolute;
-    z-index: 0;
+
 }  
 
 .ellipse1{
@@ -130,7 +141,7 @@
 .ellipse3{
     top: 20rem;
     right: 0;
-    max-height: 20rem;
+    max-height: 23rem;
 }
 
 .star1{
@@ -144,31 +155,65 @@
 }
 
 .star3{
-    bottom: 6rem;
-    right: 7%;
+    bottom: -5rem;
+    right: 8%;
 }
 
 .star4{
-    bottom: 2rem;
-    left: 7%;
+    bottom: -10rem;
+    left: 10%;
 }
 
 .heroscribe{
-    bottom: 20%;
+    bottom: 8%;
     right: 20%;
-
 }
 
 .sect2{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 5rem 1.5rem;
+    padding: 10rem 1.5rem 6rem 1.5rem;
+    position: relative;
+}
+
+.ellipse4, .star5, .star6, .star7, .scribe2, .scribe3{
+    position: absolute;
+}
+
+.ellipse4{
+    top: 6rem;
+    left: 4rem;
+}
+
+.scribe2{
+    top: 8rem;
+    left: 50%;
+}
+
+.scribe3{
+    top: 3rem;
+    right: 7%;
+}
+
+.star5{
+    top: 15rem;
+    left: 28%;
+}
+
+.star6{
+    bottom: 24%;
+    left: 50%;
+}
+
+.star7{
+    bottom: 1rem;
+    right: 3rem;
 }
 
 .contentdiv{
-   padding: 2rem;
-   text-align: center; 
+    padding: 2rem;
+    width: 40rem;
 }
 
 .contentdiv h2{
@@ -181,14 +226,18 @@
     font-style: 'Satoshi-Regular';
     font-weight: 200;
     font-size: 20px;
-    padding: 0.5rem 7rem;
-    text-align: start;
+    
+}
+
+.contentdiv img{
+    margin-left: 6.5rem;
 }
 .sect2form{
-    padding: 2.5rem 1.5rem;
+    padding: 2.5rem ;
     background: #1D2939;
     border-radius: 20px;
     text-align: center;
+    width: 30rem;
 }
 
 .sect2form h3{
@@ -203,9 +252,11 @@
     background-color: #121b2700;
     border: 1px solid rgba(221, 221, 221, 0.5);
     border-radius: 8px;
+    color: #ffffff;
 }
 
-.sect2form input::placeholder, #sect2select::placeholder, #sect2message::placeholder{
+.sect2form input::placeholder, #sect2select::placeholder, #sect2message::placeholder,
+.sect2form input:focus, #sect2select:focus, #sect2message:focus{
     color: #ffffffc0;
 }
 
@@ -225,11 +276,31 @@
     color: #ffffff;
     border: none;
     cursor: pointer;
+    transition: 0.5s;
+}
+
+.sect2button:hover{
+    transform: scaleX(0.95);
 }
 
 .myfooter{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.myfooter div{
+    display: flex;
+    align-items: flex-start;
+    margin: 0 1rem;
+}
+
+.footerspecial{
+    width: 18rem;
+}
+
+.myfooter img{
+    margin-right: 5px;
 }

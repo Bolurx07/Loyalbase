@@ -10,6 +10,7 @@ import star1 from '../Assets/Star3.svg';
 import star2 from '../Assets/Star4.svg';
 import heroscribe from '../Assets/heroscribe.svg';
 import scribe from '../Assets/scribe2.svg';
+import scribe2 from '../Assets/scribe3.svg';
 import home from '../Assets/home.svg';
 import phone from '../Assets/phone.svg';
 
@@ -56,6 +57,13 @@ const Loyalbaze = () => {
             </div>
         </section>
         <section className='sect2'>
+            <img src={ellipse2} alt="ellipse" className='ellipse4' />
+            <img src={star1} alt="star" className='star5' />
+            <img src={star2} alt="star" className='star6' />
+            <img src={star2} alt="star" className='star7' />
+            <img src={scribe2} alt="scribe" className='scribe2' />
+            <img src={scribe2} alt="scribe" className='scribe3' />
+
             <div className='contentdiv'>
                 <h2>Priority Access</h2>
                 <img src={scribe} alt="scribe" />
@@ -92,7 +100,7 @@ const Loyalbaze = () => {
         <footer className='myfooter'>
             <div>
                 <img src={home} alt="homeicon" />
-                <p>2nd Floor, The Garnet Building, KM14 Lekki Epe Expressway, Lagos, Nigeria.</p>
+                <p className='footerspecial'>2nd Floor, The Garnet Building, KM14 Lekki Epe Expressway, Lagos, Nigeria.</p>
             </div>
             <div>
                 <p>Loyalbaze is almost here.</p>
