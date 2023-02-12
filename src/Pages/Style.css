@@ -66,50 +66,6 @@
     padding: 0 18%;
 }
 
-.heroform{
-    text-align: center;
-}
-.heroinput{
-    padding: 1rem 1rem 1rem 2.5rem;
-    background-color: #121b2700;
-    border: 1px solid white;
-    border-radius: 10px;
-    margin: 0.5rem 0;
-    width: 25rem;
-}
-
-.heroinput::placeholder, .heroinput:focus{
-    color: #ffffff;
-}
-#heroname{
-    background-image: url('../Assets/profile.svg');
-}
-
-#heromail{
-    background-image: url('../Assets/mail.svg');
-}
-
-#heroname, #heromail{
-    background-repeat: no-repeat;
-    background-position: 8px;
-}
-
-.heroform button{
-    background: linear-gradient(112.92deg, #5404FF 18.35%, rgba(189, 59, 210, 0.94) 71.49%);;
-    padding: 0.75rem 9rem;
-    border-radius: 100px;
-    border: none;
-    color: white;
-    font-size: 1rem;
-    margin: 1rem 0;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.heroform button:hover{
-    transform: scaleX(0.95);
-}
-
 .herouser{
     display: flex;
     justify-content: center;
@@ -173,6 +129,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     padding: 10rem 1.5rem 6rem 1.5rem;
     position: relative;
 }

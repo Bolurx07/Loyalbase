@@ -1,0 +1,73 @@
+.heroform{
+    text-align: center;
+    font-family: 'Satoshi-Regular';
+    position: relative;
+}
+
+#name, #email{
+    padding: 1rem 1rem 1rem 2.5rem;
+    background-color: #121b2700;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 0.5rem 0;
+    width: 25rem;
+
+}
+
+#name::placeholder, #email::placeholder, #name:focus, #email:focus{
+    color: #ffffff;
+    /* font-family: 'Satoshi-Bold'; */
+}
+
+.error-icon{
+    position: absolute;
+    right: 31%;
+    top: 1.5rem;
+}
+
+#name{
+    background-image: url('../../Assets/profile.svg');
+}
+
+#email{
+    background-image: url('../../Assets/mail.svg');
+}
+
+#name, #email{
+    background-repeat: no-repeat;
+    background-position: 8px;
+}
+
+.heroform button{
+    background: linear-gradient(112.92deg, #5404FF 18.35%, rgba(189, 59, 210, 0.94) 71.49%);;
+    padding: 0.75rem 9rem;
+    border-radius: 100px;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.heroform button:hover{
+    transform: scaleX(0.95);
+}
+
+/* .showerror{
+    background-color:  red;
+} */
+
+.error{
+    color: red;
+}
+
+
+.showPopup{
+    display: block;
+    
+}
+
+.hidePopup{
+    display: none;
+}

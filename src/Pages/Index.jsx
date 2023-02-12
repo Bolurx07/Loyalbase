@@ -13,11 +13,13 @@ import scribe from '../Assets/scribe2.svg';
 import scribe2 from '../Assets/scribe3.svg';
 import home from '../Assets/home.svg';
 import phone from '../Assets/phone.svg';
+import Heroform from '../Components/Heroform/Heroform';
 
 
 
 
 const Loyalbaze = () => {
+
   return (
     <div className='maincontainer'>
         <img src={ellipse1} alt="ellipse" className='ellipse1' />
@@ -46,11 +48,9 @@ const Loyalbaze = () => {
                     your business. Sign up now to get early access.
                 </p>
             </div>
-            <form className='heroform' > 
-                <Input inputclass={'heroinput'} inputType={'name'} inputPlaceholder={'Tell us your name'} inputID={'heroname'} />
-                <Input inputclass={'heroinput'} inputType={'email'}  inputPlaceholder={'Enter your email address'} inputID={'heromail'} />
-                <Button btnText={'Get early access'} btnClass={'herobtn'}/>
-            </form>
+            <div>
+                <Heroform />
+            </div>
             <div className='herouser'>
                 <img src={heroimg} alt="user" />
                 <p>+57 Joined</p>
@@ -110,6 +110,7 @@ const Loyalbaze = () => {
                 <p>+234 903 618 9485</p>
             </div>
         </footer>
+        
     </div>
   )
 }
