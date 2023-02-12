@@ -11,6 +11,7 @@
     border-radius: 10px;
     margin: 0.5rem 0;
     width: 25rem;
+    color: white;
 
 }
 
@@ -54,20 +55,6 @@
     transform: scaleX(0.95);
 }
 
-/* .showerror{
-    background-color:  red;
-} */
-
 .error{
     color: red;
-}
-
-
-.showPopup{
-    display: block;
-    
-}
-
-.hidePopup{
-    display: none;
 }

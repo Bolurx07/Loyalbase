@@ -77,6 +77,10 @@
     margin-right: 4px;
 }
 
+.herouser p{
+    margin-bottom: 0 ;
+    
+}
 .ellipse1, .ellipse2, .ellipse3, .star1, .star2, .star3, .star4, .heroscribe{
     position: absolute;
 
@@ -189,7 +193,7 @@
 .contentdiv img{
     margin-left: 6.5rem;
 }
-.sect2form{
+/* .sect2form{
     padding: 2.5rem ;
     background: #1D2939;
     border-radius: 20px;
@@ -238,7 +242,7 @@
 
 .sect2button:hover{
     transform: scaleX(0.95);
-}
+} */
 
 .myfooter{
     display: flex;

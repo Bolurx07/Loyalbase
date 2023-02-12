@@ -1,0 +1,50 @@
+.sect2form{
+    padding: 2.5rem ;
+    background: #1D2939;
+    border-radius: 20px;
+    text-align: center;
+    width: 30rem;
+}
+
+.sect2form h3{
+    text-align: left;
+    margin: 0 0 1rem 1rem;
+}
+
+.sect2form input, #select, #message{
+    padding: 0.85rem 1rem;
+    margin: 0.5rem 0;
+    width: 22rem;
+    background-color: #121b2700;
+    border: 1px solid rgba(221, 221, 221, 0.5);
+    border-radius: 8px;
+    color: #ffffff;
+}
+
+.sect2form input::placeholder, #select::placeholder, #message::placeholder,
+.sect2form input:focus, #select:focus, #message:focus{
+    color: #ffffffc0;
+}
+
+#select{
+    color: #ffffffc0;
+}
+
+#select option{
+    color: black ;
+}
+
+.sect2button{
+    background: linear-gradient(112.92deg, #5404FF 18.35%, rgba(189, 59, 210, 0.94) 71.49%);
+    border-radius: 100px;
+    padding: 0.75rem 0;
+    width: 22rem;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.sect2button:hover{
+    transform: scaleX(0.95);
+}

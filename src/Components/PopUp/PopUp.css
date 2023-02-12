@@ -1,0 +1,30 @@
+
+.popup-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Satoshi-Regular';
+    background-color: #19181e;
+    font-family: 'Satoshi-Regular';
+    color: #ffffff;
+    padding: 2rem;
+}
+
+.popup-div img{
+    width: 6rem;
+    margin: 3rem auto;
+}
+
+.popup-div h4{
+    font-weight: 600;
+}
+
+.popup-div p{
+    font-family: 'Satoshi-Light';
+
+}
+
+.modal-body{
+    background-color: #19181e;
+}

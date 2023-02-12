@@ -5,17 +5,22 @@ import { useFormik } from 'formik';
 import { basicSchema } from '../../Schemas';
 import { HiCheckCircle } from 'react-icons/hi';
 import { MdCancel } from 'react-icons/md';
+import { useState, useEffect } from 'react';
+import MyVerticallyCenteredModal from '../PopUp/PopUp';
 
 
 const onSubmit = async (values, actions) => {
-    console.log(values);
-    console.log(actions)
-    await new Promise((resolve) => setTimeout(resolve, 15000));
+    // console.log(values);
+    console.log(actions);
+    await new Promise((resolve) => setTimeout(resolve, 5000));
     actions.resetForm()
+
 }
 
 
 const Heroform = () => {
+
+    // Formik & Yup for State management
     const { values, errors, touched, isSubmitting, handleChange, handleBlur, handleSubmit } = useFormik({
         initialValues: {
             name: "",
@@ -24,12 +29,28 @@ const Heroform = () => {
         validationSchema: basicSchema,
         onSubmit,
     });
-
+    
     console.log(errors)
+    
+    // State and UseEffect to fire Modal Pop-up after form submission
+    const [modalShow, setModalShow] = useState(false);
+
+    useEffect( () => {
+        if (isSubmitting === true) {
+            return setModalShow(true)
+            
+        } else{
+            return setModalShow(false)
+        }
+
+    },[isSubmitting]
+    );
+         
+
 
   return (
     <form className='heroform' onSubmit={handleSubmit}> 
-        <Input inputclass={errors.name && touched.name ? "showerror" : ""} 
+        <Input  
                 inputType={'name'} 
                 inputPlaceholder={'Tell us your name'} 
                 inputID={'name'}
@@ -39,7 +60,7 @@ const Heroform = () => {
             />
         {/* {errors.name && touched.name ? <span className='error-icon'><MdCancel color='red'/></span>  : <span className='error-icon'><HiCheckCircle color='purple'/></span>}   */}
         {errors.name && touched.name && <p className='error'>{errors.name}</p>}
-        <Input inputclass={errors.email && touched.email ? "showerror" : ""} 
+        <Input  
                 inputType={'email'}  
                 inputPlaceholder={'Enter your email address'} 
                 inputID={'email'} 
@@ -50,16 +71,15 @@ const Heroform = () => {
         {/* {errors.email && touched.email ? <span className='error-icon'><MdCancel color='red'/></span> : <span className='error-icon'><HiCheckCircle color='purple'/></span>} */}
         {errors.email && touched.email && <p className='error'>{errors.email}</p>}
 
-        <Button btnText={'Get early access'} btnClass={'herobtn'}/>
+        <Button btnText={'Get early access'} btnClass={'herobtn'} />
 
-        <div className={isSubmitting ? "showPopup" : "hidePopup"} >
-            <img src="" alt="" />
-            <h4>Congratulations</h4>
-            <p>
-                Great move! You're one step closer to getting 
-                your hands on the product. Please check your 
-                mail for more information.
-            </p>
+        {/* {isSubmitting = () => setModalShow(true)} */}
+
+        <div>
+            <MyVerticallyCenteredModal 
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+            />
         </div>
     </form>
   )

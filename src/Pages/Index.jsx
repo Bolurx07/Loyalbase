@@ -1,6 +1,5 @@
 import './Style.css';
 import Button from '../Components/Button';
-import Input from '../Components/Input';
 import logo from '../Assets/logo.svg';
 import heroimg from '../Assets/heroimg.svg';
 import ellipse1 from '../Assets/Ellipse-1.svg';
@@ -14,6 +13,7 @@ import scribe2 from '../Assets/scribe3.svg';
 import home from '../Assets/home.svg';
 import phone from '../Assets/phone.svg';
 import Heroform from '../Components/Heroform/Heroform';
+import Bookingform from '../Components/Bookingform/Bookingform';
 
 
 
@@ -75,7 +75,10 @@ const Loyalbaze = () => {
                     be in touch Immediately!
                 </p>
             </div>
-            <form className='sect2form'>
+            <div>
+                <Bookingform />
+            </div>
+            {/* <form className='sect2form'>
                 <h3>Book a Consultation with us</h3>
                 <Input inputclass={'nameinput'} inputType={'name'} inputPlaceholder={'Enter your full name'} />
                 <Input inputclass={'mailinput'} inputType={'email'} inputPlaceholder={'Enter your work email'} />
@@ -94,7 +97,7 @@ const Loyalbaze = () => {
                     </select>
                 <textarea resize='none'  name="message" placeholder="Drop a message....." rows="5" cols="20" minLength={10} id="sect2message"></textarea>
                 <Button btnText={'Send Request'} btnClass={'sect2button'} />
-            </form>
+            </form> */}
         </section>
         <hr />
         <footer className='myfooter'>
