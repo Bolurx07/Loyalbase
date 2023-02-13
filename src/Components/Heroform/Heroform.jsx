@@ -3,8 +3,6 @@ import Input from '../Input';
 import Button from '../Button';
 import { useFormik } from 'formik';
 import { basicSchema } from '../../Schemas';
-import { HiCheckCircle } from 'react-icons/hi';
-import { MdCancel } from 'react-icons/md';
 import { useState, useEffect } from 'react';
 import MyVerticallyCenteredModal from '../PopUp/PopUp';
 
@@ -12,7 +10,7 @@ import MyVerticallyCenteredModal from '../PopUp/PopUp';
 const onSubmit = async (values, actions) => {
     // console.log(values);
     // console.log(actions);
-    await new Promise((resolve) => setTimeout(resolve, 10000));
+    await new Promise((resolve) => setTimeout(resolve, 7000));
     actions.resetForm()
 
 }
@@ -56,7 +54,6 @@ const Heroform = () => {
                 inputOnChange={handleChange}
                 inputOnBlur={handleBlur}
             />
-        {/* {errors.name && touched.name ? <span className='error-icon'><MdCancel color='red'/></span>  : <span className='error-icon'><HiCheckCircle color='purple'/></span>}   */}
         {errors.name && touched.name && <p className='error'>{errors.name}</p>}
         <Input  
                 inputType={'email'}  
@@ -66,13 +63,9 @@ const Heroform = () => {
                 inputOnChange={handleChange}
                 inputOnBlur={handleBlur}
         />
-        {/* {errors.email && touched.email ? <span className='error-icon'><MdCancel color='red'/></span> : <span className='error-icon'><HiCheckCircle color='purple'/></span>} */}
         {errors.email && touched.email && <p className='error'>{errors.email}</p>}
 
         <Button btnText={'Get early access'} btnClass={'herobtn'} />
-
-        {/* {isSubmitting = () => setModalShow(true)} */}
-
         <div>
             <MyVerticallyCenteredModal 
                 show={modalShow}

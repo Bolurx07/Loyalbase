@@ -225,18 +225,28 @@
     }
     
     .star3{
-        bottom: -9rem;
+        bottom: 12rem;
     }
 
     .star4{
-        bottom: -13rem;
+        bottom: 3rem;
     }
 
 }
 
+
+
 @media screen and (max-width: 900px) {
     .sect2{
         flex-wrap: wrap;
+    }
+
+    .star5{
+        left: 1rem;
+    }
+
+    .star6{
+        display: none;
     }
 
     .contentdiv{
@@ -314,10 +324,6 @@
         left: 1rem;
     }
 
-    .star6{
-        display: none;
-    }
-
     .star7{
         right: 8px;
         width: 2rem;
@@ -361,13 +367,12 @@
 
     .star3{
         width: 2rem;
-        bottom: -6rem;
         right: 8px;
     }
 
     .star4{
         width: 2rem;
-        bottom: -9rem;
+        bottom: 7rem;
         left: 8px;
     }
 
@@ -407,7 +412,7 @@
     }
 }
 
-@media screen and (max-width: 315px) {
+@media screen and (max-width: 320px) {
     .headerlogo{
         width: 6rem;
     }
@@ -419,5 +424,19 @@
 
     .myfooter p{
         font-size: 0.75rem;
+    }
+    .star1{
+        top: 6.5rem;
+    }
+    .star3{
+        bottom: -3rem;
+    }
+
+    .star4{
+        bottom: -10rem;
+    }
+
+    .myfooter{
+        flex-direction: column;
     }
 }

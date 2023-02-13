@@ -17,7 +17,6 @@
 
 #name::placeholder, #email::placeholder, #name:focus, #email:focus{
     color: #ffffff;
-    /* font-family: 'Satoshi-Bold'; */
 }
 
 .error-icon{
