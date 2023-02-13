@@ -48,3 +48,58 @@
 .sect2button:hover{
     transform: scaleX(0.95);
 }
+
+@media screen and (max-width: 600px) {
+    .sect2form{
+        width: 25rem;
+    }
+
+    .sect2form input, #select, #message, .sect2button{
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .sect2form{
+        width: 20rem;
+    }
+
+    .sect2form input, #select, #message, .sect2button{
+        width: 15rem;
+    }
+
+    .sect2form h3{
+        font-size: 1rem;
+        margin: 0 0 1rem 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sect2form{
+        width: 17rem;
+        padding: 2rem 1rem;
+    }
+
+    .sect2form h3{
+        margin: 0 0 1rem 1rem;
+    }
+
+    .sect2form input, #select, #message, .sect2button{
+        width: 12rem;
+    }
+
+    .sect2form input::placeholder, #select::placeholder, 
+    #message::placeholder, #select, .sect2button{
+        font-size: 0.75rem;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .sect2form{
+        width: 14rem;
+    }
+
+    .sect2form input, #select, #message, .sect2button{
+        width: 10rem;
+    }
+}

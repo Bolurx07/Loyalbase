@@ -6,7 +6,7 @@ import { heroFormSchema } from '../../Schemas';
 
 const onSubmit = async (values, actions) => {
     // console.log(values);
-    console.log(actions);
+    // console.log(actions);
     await new Promise((resolve) => setTimeout(resolve, 5000));
     actions.resetForm()
 

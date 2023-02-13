@@ -11,8 +11,8 @@ import MyVerticallyCenteredModal from '../PopUp/PopUp';
 
 const onSubmit = async (values, actions) => {
     // console.log(values);
-    console.log(actions);
-    await new Promise((resolve) => setTimeout(resolve, 5000));
+    // console.log(actions);
+    await new Promise((resolve) => setTimeout(resolve, 10000));
     actions.resetForm()
 
 }
@@ -30,15 +30,13 @@ const Heroform = () => {
         onSubmit,
     });
     
-    console.log(errors)
     
-    // State and UseEffect to fire Modal Pop-up after form submission
+    // State and UseEffect to fire Modal Pop-up message after form submission
     const [modalShow, setModalShow] = useState(false);
 
     useEffect( () => {
         if (isSubmitting === true) {
-            return setModalShow(true)
-            
+            return setModalShow(true)  
         } else{
             return setModalShow(false)
         }

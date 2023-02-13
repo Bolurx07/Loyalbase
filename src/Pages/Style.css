@@ -133,7 +133,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
     padding: 10rem 1.5rem 6rem 1.5rem;
     position: relative;
 }
@@ -193,56 +192,6 @@
 .contentdiv img{
     margin-left: 6.5rem;
 }
-/* .sect2form{
-    padding: 2.5rem ;
-    background: #1D2939;
-    border-radius: 20px;
-    text-align: center;
-    width: 30rem;
-}
-
-.sect2form h3{
-    text-align: left;
-    margin: 0 0 1rem 1rem;
-}
-
-.sect2form input, #sect2select, #sect2message{
-    padding: 0.85rem 1rem;
-    margin: 0.5rem 0;
-    width: 22rem;
-    background-color: #121b2700;
-    border: 1px solid rgba(221, 221, 221, 0.5);
-    border-radius: 8px;
-    color: #ffffff;
-}
-
-.sect2form input::placeholder, #sect2select::placeholder, #sect2message::placeholder,
-.sect2form input:focus, #sect2select:focus, #sect2message:focus{
-    color: #ffffffc0;
-}
-
-#sect2select{
-    color: #ffffffc0;
-}
-
-#sect2select option{
-    color: black;
-}
-
-.sect2button{
-    background: linear-gradient(112.92deg, #5404FF 18.35%, rgba(189, 59, 210, 0.94) 71.49%);
-    border-radius: 100px;
-    padding: 0.75rem 0;
-    width: 22rem;
-    color: #ffffff;
-    border: none;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.sect2button:hover{
-    transform: scaleX(0.95);
-} */
 
 .myfooter{
     display: flex;
@@ -264,4 +213,211 @@
 
 .myfooter img{
     margin-right: 5px;
+}
+
+@media screen and (max-width: 1200px) {
+    .heroscribe{
+        display: none;
+    }
+
+    .star1{
+        top: 10rem;
+    }
+    
+    .star3{
+        bottom: -9rem;
+    }
+
+    .star4{
+        bottom: -13rem;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .sect2{
+        flex-wrap: wrap;
+    }
+
+    .contentdiv{
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .contentdiv img{
+        margin-left: 0;
+    }
+
+    .bform-container{
+        margin: 0 auto;
+        z-index: 1;
+    }
+
+    .myfooter{
+        padding: 0.5rem 0 0 0;
+    }
+
+    .myfooter div{
+        margin: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .headerbtn{
+        padding: 0.5rem 0.75rem;
+        font-size: 0.75rem;
+    }
+    
+    .herodiv h1{
+        font-size: 40px;
+        padding: 0 15%;
+    }
+
+    .herodiv p{
+        font-size: 15px;
+        padding: 0 15%;
+    }
+
+    .sect2{
+        padding: 6rem 1.5rem;
+    }
+
+    .contentdiv{
+        z-index: 1;
+    }
+
+    .contentdiv h2{
+        font-size: 40px;
+    }
+
+    .contentdiv p{
+        font-size: 15px;
+    }
+    
+    .ellipse4{
+        left: 0.5rem;
+    }
+
+    .scribe2{
+        top: 3rem;
+        width: 1rem;
+    }
+
+    .scribe3{
+        top: 0;
+        right: 3%;
+        width: 1rem;
+    }
+
+    .star5{
+        top: 23rem;
+        left: 1rem;
+    }
+
+    .star6{
+        display: none;
+    }
+
+    .star7{
+        right: 8px;
+        width: 2rem;
+    }
+}
+
+@media screen and (max-width: 465px) {
+    .maincontainer{
+        padding: 3rem 1.5rem;
+    }
+
+    .headerlogo{
+        width: 8rem;
+    }
+
+    .sect1 header{
+        margin-bottom: 3rem;
+    }
+
+    .herodiv h1{
+        font-size: 32px;
+        padding: 0 1rem;
+    }
+
+    .herodiv p{
+        font-size: 12px;
+        padding: 0 1rem;
+    }
+
+    .star1{
+        top: 7.5rem;
+        width: 1rem;
+
+    }
+
+    .star2{
+        width: 1rem;
+        top: 11rem;
+        right: 5%;
+    }
+
+    .star3{
+        width: 2rem;
+        bottom: -6rem;
+        right: 8px;
+    }
+
+    .star4{
+        width: 2rem;
+        bottom: -9rem;
+        left: 8px;
+    }
+
+    .sect2{
+        padding: 6rem 1.5rem 4rem 1.5rem;
+    }
+
+    .contentdiv{
+        padding: 2rem 0;
+    }
+
+    .contentdiv h2{
+        font-size: 32px;
+    }
+
+    .contentdiv img{
+        width: 6rem;
+    }
+
+    .contentdiv p{
+        font-size: 12px;
+    }
+    .ellipse4{
+        top: 1rem;
+        left: 0;
+    }
+
+    .star5, .star7{
+        width: 1rem;
+    }
+
+    .myfooter div{
+        margin: auto;
+    }
+    .footerspecial{
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 315px) {
+    .headerlogo{
+        width: 6rem;
+    }
+
+    .headerbtn{
+        padding: 0.35rem 0.5rem;
+        font-size: 0.65rem;
+    }
+
+    .myfooter p{
+        font-size: 0.75rem;
+    }
 }

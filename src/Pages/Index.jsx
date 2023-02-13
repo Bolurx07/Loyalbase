@@ -75,29 +75,9 @@ const Loyalbaze = () => {
                     be in touch Immediately!
                 </p>
             </div>
-            <div>
+            <div className='bform-container'>
                 <Bookingform />
             </div>
-            {/* <form className='sect2form'>
-                <h3>Book a Consultation with us</h3>
-                <Input inputclass={'nameinput'} inputType={'name'} inputPlaceholder={'Enter your full name'} />
-                <Input inputclass={'mailinput'} inputType={'email'} inputPlaceholder={'Enter your work email'} />
-                <Input inputclass={'numinput'} inputType={'number'} inputPlaceholder={'Mobile number'} />
-                <Input inputclass={'companyinput'} inputType={'name'} inputPlaceholder={'Company Name'} />
-                <select name="country"  id='sect2select'> 
-                        <option defaultValue="" selected>Select Country</option>
-                        <option value="nigeria">Nigeria</option>
-                        <option value="southafrica">South Africa</option>
-                        <option value="kenya">Kenya</option>
-                        <option value="russia">Russia</option>
-                        <option value="sweden">Sweden</option>
-                        <option value="portugal">Portugal</option>
-                        <option value="usa">USA</option>
-                        <option value="china">China</option>
-                    </select>
-                <textarea resize='none'  name="message" placeholder="Drop a message....." rows="5" cols="20" minLength={10} id="sect2message"></textarea>
-                <Button btnText={'Send Request'} btnClass={'sect2button'} />
-            </form> */}
         </section>
         <hr />
         <footer className='myfooter'>

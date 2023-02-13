@@ -53,8 +53,40 @@
 
 .heroform button:hover{
     transform: scaleX(0.95);
+    border: 1px solid white;
 }
 
 .error{
     color: red;
+}
+
+
+@media screen and (max-width: 500px) {
+    #name, #email{
+        width: 20rem;
+    }
+
+    .heroform button{
+        padding: 0.75rem 6rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #name, #email{
+        width: 17rem;
+    }
+
+    .heroform button{
+        padding: 0.75rem 4.5rem;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    #name, #email{
+        width: 15rem;
+    }
+
+    .heroform button{
+        padding: 0.75rem 3.75rem;
+    }
 }
