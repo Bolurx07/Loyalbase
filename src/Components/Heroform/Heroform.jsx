@@ -18,7 +18,7 @@ const onSubmit = async (values, actions) => {
 
 const Heroform = () => {
 
-    // Formik & Yup for State management
+    // Formik & Yup for State management & Validation
     const { values, errors, touched, isSubmitting, handleChange, handleBlur, handleSubmit } = useFormik({
         initialValues: {
             name: "",
@@ -27,7 +27,6 @@ const Heroform = () => {
         validationSchema: basicSchema,
         onSubmit,
     });
-    
     
     // State and UseEffect to fire Modal Pop-up message after form submission
     const [modalShow, setModalShow] = useState(false);
@@ -42,8 +41,6 @@ const Heroform = () => {
     },[isSubmitting]
     );
          
-
-
   return (
     <form className='heroform' onSubmit={handleSubmit}> 
         <Input  
@@ -66,6 +63,8 @@ const Heroform = () => {
         {errors.email && touched.email && <p className='error'>{errors.email}</p>}
 
         <Button btnText={'Get early access'} btnClass={'herobtn'} />
+
+        {/* Modal Pop-up */}
         <div>
             <MyVerticallyCenteredModal 
                 show={modalShow}

@@ -353,6 +353,9 @@
         padding: 0 1rem;
     }
 
+    .ellipse1{
+        display: none;
+    }
     .star1{
         top: 7.5rem;
         width: 1rem;
